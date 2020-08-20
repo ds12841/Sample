@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <form class="form-inline my-2 my-lg-0" method="POST" action="/away">
+        <input class="form-control mr-sm-2" name="xyz" type="search" placeholder="Enter name or location" aria-label="Search" autocomplete="off" >
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+  </nav>
+  <form class="form-signin" action="/db" method="POST">
+    <div class="form-label-group mb-4">
+      <label for="name" class="field">Name</label>
+      <input type="text" name="name" id="name" autocomplete="off" class="field mar" placeholder="Name" required="" autofocus="">
+    </div>
+    <div class="form-label-group mb-4">
+      <label class="field" for="loc">Location</label><span>  </span>
+      <input type="text" id="loc" name="location" autocomplete="off" class="field" placeholder="Location" required="" width="50">
+    </div>
+    <button class="btn btn-lg bg-warning field" type="submit">Save</button>
+  </form>
+<%- include('partials/footer') %>

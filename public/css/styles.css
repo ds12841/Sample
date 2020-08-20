@@ -1,0 +1,22 @@
+.field{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+.mar{
+  margin-left: 37px;
+}
+table {
+    border-collapse: collapse;
+    margin-left: 50px;
+} 
+table, td, th {
+    border: 1px solid black;
+    padding: 15px;
+}
+h4{
+    margin-left:10px;
+    margin-bottom:30px ;
+}
+.bg{
+  background-color: #DFE0DD;
+}

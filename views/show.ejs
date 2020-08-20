@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<h4>Note: Search '0' for listing out all the records.</h4>
+<table class="bg">
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+  </tr>
+  <% data.forEach(item=>{ %>
+    <tr>
+      <td><%= item.name %></td>
+      <td><%= item.location %></td>
+    </tr>
+  <% }); %>
+</table>
+<%- include('partials/footer') %>
